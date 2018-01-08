@@ -1,0 +1,39 @@
+.nav {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+
+  &-logo {
+    margin: 0;
+    max-height: 100%;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  &-links {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    align-self: center;
+    flex: 1;
+
+    li {
+      display: inline;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      opacity: 0.8;
+      letter-spacing: 0.5px;
+    }
+  }
+}

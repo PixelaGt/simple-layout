@@ -1,0 +1,9 @@
+$orange:             #fe6d0e !default;
+$light-orange:       #fd6907 !default;
+$dark-orange:        #f97f00 !default;
+
+$original-black:     #0e0906 !default;
+$black:              darken($original-black, 4%) !default;
+$black-transparent:  rgba($original-black,  0.25) !default;
+
+$gray:               #232323 !default;

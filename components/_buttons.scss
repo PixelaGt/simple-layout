@@ -1,0 +1,13 @@
+%btn {
+  padding: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 16px;
+}
+
+.btn-white {
+  @extend %btn;
+  background-color: white;
+  color: #192d41;
+}

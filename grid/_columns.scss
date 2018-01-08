@@ -1,0 +1,6 @@
+@mixin col($cols: 12) {
+  $total-width: ($cols/12) * 100%;
+  width: calc(#{$total-width} - 32px);
+  flex-shrink: 0;
+  margin: 0 16px;
+}
