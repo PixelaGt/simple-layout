@@ -1,0 +1,31 @@
+@import '../settings';
+
+nav {
+  margin-left: $global-margin;
+  margin-right: $global-margin;
+
+  a {
+    display: inline-block;
+    padding: $global-padding;
+    margin-left: $nav-link-margin;
+    margin-right: $nav-link-margin;
+  }
+}
+
+.nav {
+  padding: 0;
+  list-style: none;
+  margin-left: $global-margin;
+  margin-right: $global-margin;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      margin-left: $nav-link-margin;
+      margin-right: $nav-link-margin;
+      padding: $global-padding;
+    }
+  }
+}

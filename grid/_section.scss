@@ -1,4 +1,11 @@
+@import '../settings';
+
+section {
+  padding-top: $padding-md;
+  padding-bottom: $padding-md;
+}
+
 .section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: $padding-md;
+  padding-bottom: $padding-md;
 }

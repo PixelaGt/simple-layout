@@ -1,6 +1,44 @@
-@mixin col($cols: 12) {
-  $total-width: ($cols/12) * 100%;
-  width: calc(#{$total-width} - 32px);
+@import '../settings';
+@import './queries';
+
+@mixin col($columns: $cols, $breakpoint: none) {
+  $total-width: ($columns/$max-cols) * 100%;
+
+  @if map-has-key($breakpoints, $breakpoint) {
+    @include breakpoint($breakpoint) {
+      width: calc(#{$total-width} - (#{$col-margin * 2}));
+    }
+  }
+
+  @else {
+    width: calc(#{$total-width} - (#{$col-margin * 2}));
+  }
+
   flex-shrink: 0;
-  margin: 0 16px;
+  margin-left: $col-margin;
+  margin-right: $col-margin;
+}
+
+@mixin col-sm($columns:$cols) {
+  @if map-has-key($breakpoints, sm) {
+    @include col($columns, sm);
+  }
+}
+
+@mixin col-md($columns:$cols) {
+  @if map-has-key($breakpoints, md) {
+    @include col($columns, md);
+  }
+}
+
+@mixin col-lg($columns:$cols) {
+  @if map-has-key($breakpoints, lg) {
+    @include col($columns, lg);
+  }
+}
+
+@mixin col-xl($columns:$cols) {
+  @if map-has-key($breakpoints, xl) {
+    @include col($columns, xl);
+  }
 }

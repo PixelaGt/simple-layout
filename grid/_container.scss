@@ -1,6 +1,8 @@
-.container {
-  width: 100%;
-  max-width: 1200px;
+@import '../settings';
+
+%container {
+  width: $container-width;
+  max-width: $max-cont-width;
   margin: 0 auto;
 }
 

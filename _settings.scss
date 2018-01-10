@@ -4,6 +4,33 @@ $dark-orange:        #f97f00 !default;
 
 $original-black:     #0e0906 !default;
 $black:              darken($original-black, 4%) !default;
-$black-transparent:  rgba($original-black,  0.25) !default;
+$black-transparent:  rgba($original-black, 0.25) !default;
 
 $gray:               #232323 !default;
+
+$global-margin:      16px !default;
+$global-padding:     16px !default;
+$col-margin:         $global-margin;
+$nav-link-margin:    $global-margin;
+$cols:               12 !default;
+$max-cols:           12 !default;
+
+$sm-screen:          760px !default;
+$md-screen:          960px !default;
+$lg-screen:          1024px !default;
+$xl-screen:          1600px !default;
+
+$breakpoints: (
+  sm: $sm-screen,
+  md: $md-screen,
+  lg: $lg-screen,
+  xl: $xl-screen,
+);
+
+$container-width:    100% !default;
+$max-cont-width:     1200px !default;
+
+$padding-sm:         24px !default;
+$padding-md:         36px !default;
+$padding-lg:         48px !default;
+$padding-xl:         64px !default;

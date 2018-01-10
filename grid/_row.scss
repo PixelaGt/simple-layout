@@ -1,4 +1,8 @@
+@import '../settings';
+
 .row {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -$col-margin;
+  margin-right: -$col-margin;
 }
