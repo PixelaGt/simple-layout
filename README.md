@@ -2,6 +2,7 @@
   Simple-layout es una librería basada en flex-bos y escrita en sass que permite la contrucción rápida de aplicaciones web.
 # Tabla de contenido
 * [Instalación](#Instalación)
+* [Navs](#Navs)
 
 ## Instalación:  
 `npm i @pixela/simple-layout`
