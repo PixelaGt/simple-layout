@@ -49,7 +49,7 @@ Se deberá utilizar el mixin `col()`, se podrá utilizar de las siguientes maner
     <div class="row"></div>
   ```
 
-## Elementos
+## Elementos:
 
   * #### Navs:
   Un elemento de tipo nav se utiliza para realizar menús, haciendo uso de links dentro de su estructura. Para utilizar navs existen 2 opciones ya sea utilizando la clase `.nav` en un elemento o utilizando el elemento `<nav></nav>`, ejemplos:
