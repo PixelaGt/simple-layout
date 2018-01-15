@@ -1,22 +1,22 @@
 @import '../settings';
 @import './queries';
 
-@mixin col($columns: $cols, $breakpoint: none, $max:$max-cols) {
+@mixin col($columns: $cols, $breakpoint: none, $max:$max-cols, $col-gutter:$gutter) {
   $total-width: ($columns/$max) * 100%;
 
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
-      width: calc(#{$total-width} - (#{$gutter * 2}));
+      width: calc(#{$total-width} - (#{$col-gutter * 2}));
     }
   }
 
   @else {
-    width: calc(#{$total-width} - (#{$gutter * 2}));
+    width: calc(#{$total-width} - (#{$col-gutter * 2}));
   }
 
   flex-shrink: 0;
-  margin-left: $gutter;
-  margin-right: $gutter;
+  margin-left: $col-gutter;
+  margin-right: $col-gutter;
 }
 
 @mixin col-sm($columns:$cols-sm) {
