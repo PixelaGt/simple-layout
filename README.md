@@ -3,9 +3,22 @@
 # Tabla de contenido
 * [Instalación](#instalación)
 * [Uso](#uso) 
-* [Elementos](#elementos)
 * [Columnas](#columnas)
   * [Columnas en distintos tamaños de pantalla](#columnas-en-distintos-tamaños-de-pantalla)
+* [Filas](#filas)
+* [Elementos](#elementos)
+  * [Navs](#navs)
+  * [Containers](#containers)
+  * [Sections](#section)
+* [Variables globales](#variables-globales)
+  * [Márgenes](#márgenes)
+  * [columnas](#columnas)
+  * [Límites de columnas con distintos tamaños de pantalla](#límites-de-columnas-con-distintos-tamaños-de-pantalla)
+  * [Tamaños de pantalla](#tamaños-de-pantalla)
+  * [Tamaños de contededores](#tamaños-de-contenedores)
+  * [Tamaños de padding](#tamaños-de-padding)
+  * [Colores](#colores) 
+
 
 ## Instalación  
 `npm i @pixela/simple-layout`
@@ -94,7 +107,7 @@ Se deberá utilizar el mixin `col()`, se podrá utilizar de las siguientes maner
 ## Variables globales:
 Todas las variables globales se declararán en el archivo __settings.scss__, para sobreescribir los valores se deberán crear las variables con el mismo nombre y el valor nuevo, las variables que el paquete contiene por defecto son:
 
-* #### Margenes:
+* #### Márgenes:
  valores de los márgenes para distintos elementos
   * `$global-margin:` Es el valor de todos los márgenes, por defecto es de  16px
   * `$global-padding:` Es el valor de todos los paddings, por defecto es de 16px
