@@ -5,6 +5,7 @@
 * [Uso](#uso) 
 * [Elementos](#elementos)
 * [Columnas](#columnas)
+  * [Columnas en distintos tamaños de pantalla](#columnas-en-distintos-tamaños-de-pantalla)
 
 ## Instalación  
 `npm i @pixela/simple-layout`
