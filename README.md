@@ -9,8 +9,10 @@
 * [Elementos](#elementos)
   * [Navs](#navs)
   * [Containers](#containers)
-  * [Sections](#section)
+  * [Sections](#sections)
 * [Variables globales](#variables-globales)
+  * [Variables para margenes](#variables-para-margenes)
+  * [Variables para columnas](#variables-para-columnas)
   * [Límites de columnas con distintos tamaños de pantalla](#límites-de-columnas-con-distintos-tamaños-de-pantalla)
   * [Tamaños de pantalla](#tamaños-de-pantalla)
   * [Tamaños de contededores](#tamaños-de-contenedores)
@@ -105,7 +107,7 @@ Se deberá utilizar el mixin `col()`, se podrá utilizar de las siguientes maner
 ## Variables globales:
 Todas las variables globales se declararán en el archivo __settings.scss__, para sobreescribir los valores se deberán crear las variables con el mismo nombre y el valor nuevo, las variables que el paquete contiene por defecto son:
 
-* #### Márgenes:
+* #### Variables para margenes:
  valores de los márgenes para distintos elementos
   * `$global-margin:` Es el valor de todos los márgenes, por defecto es de  16px
   * `$global-padding:` Es el valor de todos los paddings, por defecto es de 16px
