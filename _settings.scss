@@ -10,9 +10,9 @@ $gray:               #232323 !default;
 
 $global-margin:      16px !default;
 $global-padding:     16px !default;
-$gutter:             $global-margin;
-$row-margin:         0 !default;
-$nav-link-margin:    $global-margin;
+$gutter:             $global-margin !default;
+$row-margin:         0px !default;
+$nav-link-margin:    $global-margin !default;
 $cols:               12 !default;
 $max-cols:           12 !default;
 $cols-xl:            10 !default;
@@ -39,7 +39,4 @@ $breakpoints: (
 $container-width:    100% !default;
 $max-cont-width:     1200px !default;
 
-$padding-sm:         24px !default;
-$padding-md:         36px !default;
-$padding-lg:         48px !default;
-$padding-xl:         64px !default;
+$section-padding:    $global-padding !default;
