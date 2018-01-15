@@ -10,13 +10,21 @@ $gray:               #232323 !default;
 
 $global-margin:      16px !default;
 $global-padding:     16px !default;
-$col-margin:         $global-margin;
+$gutter:             $global-margin;
 $nav-link-margin:    $global-margin;
 $cols:               12 !default;
 $max-cols:           12 !default;
+$cols-xl:            10 !default;
+$max-cols-xl:        10 !default;
+$cols-lg:            8 !default;
+$max-cols-lg:        8 !default;
+$cols-md:            6 !default;
+$max-cols-md:        6 !default;
+$cols-sm:            4 !default;
+$max-cols-sm:        4 !default;
 
-$sm-screen:          760px !default;
-$md-screen:          960px !default;
+$sm-screen:          480px !default;
+$md-screen:          760px !default;
 $lg-screen:          1024px !default;
 $xl-screen:          1600px !default;
 

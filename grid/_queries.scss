@@ -3,7 +3,7 @@
 @mixin breakpoint($screen-size) {
   $breakpoint-val: map-get($breakpoints, $screen-size);
 
-  @media screen and (min-width: $breakpoint-val) {
+  @media screen and (max-width: $breakpoint-val) {
     @content;
   }
 }

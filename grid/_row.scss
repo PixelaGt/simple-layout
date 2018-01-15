@@ -3,6 +3,6 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$col-margin;
-  margin-right: -$col-margin;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
 }

@@ -1,44 +1,44 @@
 @import '../settings';
 @import './queries';
 
-@mixin col($columns: $cols, $breakpoint: none) {
-  $total-width: ($columns/$max-cols) * 100%;
+@mixin col($columns: $cols, $breakpoint: none, $max:$max-cols) {
+  $total-width: ($columns/$max) * 100%;
 
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
-      width: calc(#{$total-width} - (#{$col-margin * 2}));
+      width: calc(#{$total-width} - (#{$gutter * 2}));
     }
   }
 
   @else {
-    width: calc(#{$total-width} - (#{$col-margin * 2}));
+    width: calc(#{$total-width} - (#{$gutter * 2}));
   }
 
   flex-shrink: 0;
-  margin-left: $col-margin;
-  margin-right: $col-margin;
+  margin-left: $gutter;
+  margin-right: $gutter;
 }
 
-@mixin col-sm($columns:$cols) {
+@mixin col-sm($columns:$cols-sm) {
   @if map-has-key($breakpoints, sm) {
-    @include col($columns, sm);
+    @include col($columns, sm, $max-cols-sm);
   }
 }
 
-@mixin col-md($columns:$cols) {
+@mixin col-md($columns:$cols-md) {
   @if map-has-key($breakpoints, md) {
-    @include col($columns, md);
+    @include col($columns, md, $max-cols-md);
   }
 }
 
-@mixin col-lg($columns:$cols) {
+@mixin col-lg($columns:$cols-lg) {
   @if map-has-key($breakpoints, lg) {
-    @include col($columns, lg);
+    @include col($columns, lg, $max-cols-lg);
   }
 }
 
-@mixin col-xl($columns:$cols) {
+@mixin col-xl($columns:$cols-xl) {
   @if map-has-key($breakpoints, xl) {
-    @include col($columns, xl);
+    @include col($columns, xl, $max-cols-xl);
   }
 }
