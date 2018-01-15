@@ -10,9 +10,7 @@
   * [Navs](#navs)
   * [Containers](#containers)
   * [Sections](#section)
-  
 * [Variables globales](#variables-globales)
-  * [Margenes](#márgenes)
   * [Límites de columnas con distintos tamaños de pantalla](#límites-de-columnas-con-distintos-tamaños-de-pantalla)
   * [Tamaños de pantalla](#tamaños-de-pantalla)
   * [Tamaños de contededores](#tamaños-de-contenedores)
