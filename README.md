@@ -11,7 +11,9 @@
   * [Containers](#containers)
   * [Sections](#section)
 * [Variables globales](#variables-globales)
+
   * [Márgenes](#márgenes)
+  
   * [Variables para columnas](#variables-para-columnas)
   * [Límites de columnas con distintos tamaños de pantalla](#límites-de-columnas-con-distintos-tamaños-de-pantalla)
   * [Tamaños de pantalla](#tamaños-de-pantalla)
