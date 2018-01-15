@@ -2,7 +2,7 @@
   Simple-layout es una librería basada en flex-bos y escrita en sass que permite la contrucción rápida de aplicaciones web.
 # Tabla de contenido
 * [Instalación](#instalación)
-* [Uso](#uso) 
+* [Uso](#uso)
 * [Columnas](#columnas)
   * [Columnas en distintos tamaños de pantalla](#columnas-en-distintos-tamaños-de-pantalla)
 * [Filas](#filas)
@@ -17,7 +17,7 @@
   * [Tamaños de pantalla](#tamaños-de-pantalla)
   * [Tamaños de contededores](#tamaños-de-contenedores)
   * [Tamaños de padding](#tamaños-de-padding)
-  * [Colores](#colores) 
+  * [Colores](#colores)
 
 
 ## Instalación  
@@ -112,6 +112,7 @@ Todas las variables globales se declararán en el archivo __settings.scss__, par
   * `$global-margin:` Es el valor de todos los márgenes, por defecto es de  16px
   * `$global-padding:` Es el valor de todos los paddings, por defecto es de 16px
   * `$gutter:` Es el valor de los márgenes entre columnas, este es igual a `$global-margin`
+  * `$row-margin:` Es el valor del margen de las filas, su valor por defecto es de 0
   * `$nav-link-margin:` Es el valor de los márgenes de un elemento nav, este es igual a `$global-margin`
 
 * #### Variables para columnas:
