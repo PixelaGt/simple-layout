@@ -2,7 +2,7 @@
   Simple-layout es una librería basada en flex-bos y escrita en sass que permite la contrucción rápida de aplicaciones web.
 # Tabla de contenido
 * [Instalación](#Instalación)
-* [Navs, containers y sections](#Navs, containers y sections)
+* [Elementos](#Elementos)
 
 ## Instalación:  
 `npm i @pixela/simple-layout`
@@ -47,7 +47,7 @@ Se deberá utilizar el mixin `col()`, se podrá utilizar de las siguientes maner
     <div class="row"></div>
   ```
 
-## Navs, containers y sections:
+## Elementos:
 
   * #### Navs:
   Un elemento de tipo nav se utiliza para realizar menús, haciendo uso de links dentro de su estructura. Para utilizar navs existen 2 opciones ya sea utilizando la clase `.nav` en un elemento o utilizando el elemento `<nav></nav>`, ejemplos:
