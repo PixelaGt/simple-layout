@@ -12,7 +12,7 @@
   * [Sections](#section)
 * [Variables globales](#variables-globales)
   * [Márgenes](#márgenes)
-  * [columnas](#columnas)
+  * [Variables para columnas](#variables-para-columnas)
   * [Límites de columnas con distintos tamaños de pantalla](#límites-de-columnas-con-distintos-tamaños-de-pantalla)
   * [Tamaños de pantalla](#tamaños-de-pantalla)
   * [Tamaños de contededores](#tamaños-de-contenedores)
@@ -114,7 +114,7 @@ Todas las variables globales se declararán en el archivo __settings.scss__, par
   * `$gutter:` Es el valor de los márgenes entre columnas, este es igual a `$global-margin`
   * `$nav-link-margin:` Es el valor de los márgenes de un elemento nav, este es igual a `$global-margin`
 
-* #### Columnas:
+* #### Variables para columnas:
   Parámetros para manejar las columnas de un elemento
   * `$cols:` Número de columnas a ocupar por un elemento, su valor es de 12
   * `$max-cols:` Número máximo de columnas de un elemento, su valor es de 12  
