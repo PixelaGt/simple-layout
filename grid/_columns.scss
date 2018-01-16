@@ -9,15 +9,15 @@
       width: calc(#{$total-width} - (#{$col-gutter}));
       flex-shrink: 0;
       margin-left: $col-gutter;
-      margin-right: $0;
+      margin-right: 0;
     }
   }
 
   @else {
     width: calc(#{$total-width} - (#{$col-gutter}));
     flex-shrink: 0;
-    margin-left: $col-gutter/2;
-    margin-right: $col-gutter/2;
+    margin-left: $col-gutter;
+    margin-right: 0;
   }
 
 }
