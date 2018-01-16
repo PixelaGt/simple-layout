@@ -3,7 +3,7 @@
 
 @mixin col($columns: $cols, $col-gutter:$gutter, $breakpoint: none, $max:$max-cols) {
   $total-width: ($columns/$max) * 100%;
-  $cols-res: ($max/$columns)
+  $cols-res: ($max/$columns);
 
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
