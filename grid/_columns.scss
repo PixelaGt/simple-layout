@@ -7,16 +7,19 @@
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
       width: calc(#{$total-width} - (#{$col-gutter}));
+      flex-shrink: 0;
+      margin-left: $col-gutter/2;
+      margin-right: $col-gutter/2;
     }
   }
 
   @else {
     width: calc(#{$total-width} - (#{$col-gutter}));
+    flex-shrink: 0;
+    margin-left: $col-gutter/2;
+    margin-right: $col-gutter/2;
   }
 
-  flex-shrink: 0;
-  margin-left: $col-gutter/2;
-  margin-right: $col-gutter/2;
 }
 
 @mixin col-sm($columns:$cols-sm, $col-gutter:$gutter) {
