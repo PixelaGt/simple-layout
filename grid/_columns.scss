@@ -3,10 +3,11 @@
 
 @mixin col($columns: $cols, $col-gutter:$gutter, $breakpoint: none, $max:$max-cols) {
   $total-width: ($columns/$max) * 100%;
+  $cols-res: ($max/$columns)
 
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
-      width: calc(#{$total-width} - (#{$col-gutter}) + (#{$col-gutter} / #{$columns}) );
+      width: calc(#{$total-width} - (#{$col-gutter}) + (#{$col-gutter} / #{$cols-res}) );
       flex-shrink: 0;
       margin-left: $col-gutter;
       margin-right: 0;
@@ -14,7 +15,7 @@
   }
 
   @else {
-    width: calc(#{$total-width} - (#{$col-gutter}) + (#{$col-gutter} / #{$columns}) );
+    width: calc(#{$total-width} - (#{$col-gutter}) + (#{$col-gutter} / #{$cols-res}) );
     flex-shrink: 0;
     margin-left: $col-gutter;
     margin-right: 0;
