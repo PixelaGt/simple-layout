@@ -6,12 +6,12 @@
 
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
-      width: calc(#{$total-width} - (#{$col-gutter * 2}));
+      width: calc(#{$total-width} - (#{$col-gutter}));
     }
   }
 
   @else {
-    width: calc(#{$total-width} - (#{$col-gutter * 2}));
+    width: calc(#{$total-width} - (#{$col-gutter}));
   }
 
   flex-shrink: 0;
