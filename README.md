@@ -33,32 +33,33 @@ Como utilizar columnas:
 
 Se deberá utilizar el mixin `col()`, se podrá utilizar de las siguientes maneras:
 
-* `col()` de esta manera se generá un elemento que ocupa 12 columnas, con un máximo de 12 columnas, es decir el resultado será un elemento que ocupe todo el ancho del contenedor, los valores del número de columnas a ocupar y el máximo de columnas están definidos en las __Variables globales__.
+* `@include col()` de esta manera se generá un elemento que ocupa 12 columnas, con un máximo de 12 columnas, es decir el resultado será un elemento que ocupe todo el ancho del contenedor, los valores del número de columnas a ocupar y el máximo de columnas están definidos en las __Variables globales__.
 
-* `col(numero_de_columnas)` también se puede utilizar enviando el número de columnas que ocupará el elemento, por ejemplo `col(4)` generá un elemento que ocupa 4 columnas de un máximo de 12.
+* `@include col(numero_de_columnas)` también se puede utilizar enviando el número de columnas que ocupará el elemento, por ejemplo `@include col(4)` generá un elemento que ocupa 4 columnas de un máximo de 12.
 
 
 #### Columnas en distintos tamaños de pantalla:
   Para los distintos tamaños de pantalla definidos en las __Variables globales__, se pueden utilizar distintas versiones del mixin `col()` las cuales funcionan de la misma manera, las columnas se podrán vizualisar hasta que el tamaño de pantalla sea igual al tamaño definido.
 
-  * `col-sm()` hasta pantallas pequeñas, por defecto tiene un máximo de columnas de 4.
-  * `col-md()` hasta pantallas medianas, por defecto tiene un máximo de columnas de 6.
-  * `col-lg()` hasta pantallas grandes, por defecto tiene un máximo de columnas de 8.
   * `col-xl()` hasta pantallas extra grandes, por defecto tiene un máximo de columnas de 10.
+  * `col-lg()` hasta pantallas grandes, por defecto tiene un máximo de columnas de 8.
+  * `col-md()` hasta pantallas medianas, por defecto tiene un máximo de columnas de 6.
+  * `col-sm()` hasta pantallas pequeñas, por defecto tiene un máximo de columnas de 4.
 
-  * __Ejemplo:__ el objeto cambiará el número de columnas segun el tamaño de la pantalla  
+  * __Ejemplo:__ el objeto cambiará el número de columnas segun el tamaño de la pantalla, los mixins deben ser utilizados como se muestra a continuación, en orden de la pantalla más grande hasta la más pequeña  
   ```
   .objeto {
-      col(6); //ocupara 6 columnas de 12
-      col-xl(4); //ocupara 4 columnas de 10
-      col-lg(3); //ocupara 3 columnas de 8
-      col-md(2); //ocupara 2 columnas de 6
-      col-sm(1); //ocupara 1 columnas de 4
+      @include col(6); //ocupara 6 columnas de 12
+      @inculde col-xl(4); //ocupara 4 columnas de 10
+      @inculde col-lg(3); //ocupara 3 columnas de 8
+      @inculde col-md(2); //ocupara 2 columnas de 6
+      @inculde col-sm(1); //ocupara 1 columnas de 4
   }
   ```
-  Todas las versiones anteriores también pueden recibir como parámetros el número de columnas por ejemplo `col-md(numero_de_columnas)`   
+  Todas las versiones anteriores también pueden recibir como parámetros el número de columnas por ejemplo `@include col-md(numero_de_columnas)`.  
+  Además todos los mixins incluyendo `col()` pueden recibir como parámetro la cantidad de pixeles que deseamos que el gutter tenga, por ejempo `@include col(6,24px)` genera un elemento que ocupa 6 de 12 columnas con una separación de 24 pixeles, por defecto la separación entre columnas está definida por la variable `$gutter` que se encuentra en las __variables globales__   
   ## Filas:
-  Para utilizar filas se deberá utilizar o extender la clase `.row`
+  Para utilizar filas se deberá utilizar o extender la clase `.row`, los márgenes de las filas pueden ser cambiados con la variable `$row-margin` que se encuentra en las __Variables globales__
   ```
     <div class="row"></div>
   ```
@@ -135,7 +136,7 @@ Distintos tamaños de pantalla a utilizar
   * `$sm-screen:`  Pantalla pequeña 480px
   * `$md-screen:`  Pantalla mediana 760px
   * `$lg-screen:`  Pantalla grande 1024px
-  * `$xl-screen:`  Pantalla extra grande 1600px
+  * `$xl-screen:`  Pantalla extra grande 1366px
 
 * #### Tamaños de contenedores:
   Valores para manejo de contenedores
@@ -143,11 +144,7 @@ Distintos tamaños de pantalla a utilizar
   * `$max-cont-width:`  Ancho máximo para un conteneror 1200px
 
 * #### Tamaños de padding:
-  Valores de padding para aplicar a elementos
-  * `$padding-sm:` Padding pequeño 24px
-  * `$padding-md:` Padding grande 36px
-  * `$padding-lg:` Padding grande 48px
-  * `$padding-xl:` Padding extra grande 64px
+  * `$section-padding:` padding por defecto para las secciones, su valor es de 36px
 
 * #### Colores:
   En este archivo también se definirán los colores a utilizar en el proyecto.  
