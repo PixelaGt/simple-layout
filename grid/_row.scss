@@ -5,4 +5,8 @@
   flex-wrap: wrap;
   margin-left: $row-margin;
   margin-right: $row-margin;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
