@@ -1,12 +1,28 @@
 @import '../settings';
 
-.row {
+%row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: $row-margin;
-  margin-right: $row-margin;
+  margin-left: -#{$gutter / 2};
+  margin-right: -#{$gutter / 2};
 
-  &> *:first-child {
-    margin-left: 0;
+  @media screen and (min-width: $sm-screen) {
+    margin-left: -#{$gutter-sm / 2};
+    margin-right: -#{$gutter-sm / 2};
+  }
+
+  @media screen and (min-width: $md-screen) {
+    margin-left: -#{$gutter-md / 2};
+    margin-right: -#{$gutter-md / 2};
+  }
+
+  @media screen and (min-width: $lg-screen) {
+    margin-left: -#{$gutter-lg / 2};
+    margin-right: -#{$gutter-lg / 2};
+  }
+
+  @media screen and (min-width: $xl-screen) {
+    margin-left: -#{$gutter-xl / 2};
+    margin-right: -#{$gutter-xl / 2};
   }
 }

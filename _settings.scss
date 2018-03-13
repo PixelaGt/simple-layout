@@ -1,16 +1,10 @@
-$orange:             #fe6d0e !default;
-$light-orange:       #fd6907 !default;
-$dark-orange:        #f97f00 !default;
-
-$original-black:     #0e0906 !default;
-$black:              darken($original-black, 4%) !default;
-$black-transparent:  rgba($original-black, 0.25) !default;
-
-$gray:               #232323 !default;
-
 $global-margin:      16px !default;
 $global-padding:     16px !default;
 $gutter:             $global-margin !default;
+$gutter-sm:          10px !default;
+$gutter-md:          12px !default;
+$gutter-lg:          16px !default;
+$gutter-xl:          16px !default;
 $row-margin:         0px !default;
 $nav-link-margin:    $global-margin !default;
 $cols:               12 !default;

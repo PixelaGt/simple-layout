@@ -7,41 +7,41 @@
 
   @if map-has-key($breakpoints, $breakpoint) {
     @include breakpoint($breakpoint) {
-      width: calc(#{$total-width} - (#{$col-gutter}) + (#{$col-gutter} / #{$cols-res}) );
       flex-shrink: 0;
-      margin-left: $col-gutter;
-      margin-right: 0;
+      margin-left: #{$col-gutter / 2};
+      margin-right: #{$col-gutter / 2};
+      width: calc(#{$total-width} - #{$col-gutter});
     }
   }
 
   @else {
-    width: calc(#{$total-width} - (#{$col-gutter}) + (#{$col-gutter} / #{$cols-res}) );
     flex-shrink: 0;
-    margin-left: $col-gutter;
-    margin-right: 0;
+    margin-left: #{$col-gutter / 2};
+    margin-right: #{$col-gutter / 2};
+    width: calc(#{$total-width} - #{$col-gutter});
   }
 
 }
 
-@mixin col-sm($columns:$cols-sm, $col-gutter:$gutter) {
+@mixin col-sm($columns:$cols-sm, $col-gutter:$gutter-sm) {
   @if map-has-key($breakpoints, sm) {
     @include col($columns, $col-gutter, sm, $max-cols-sm);
   }
 }
 
-@mixin col-md($columns:$cols-md, $col-gutter:$gutter) {
+@mixin col-md($columns:$cols-md, $col-gutter:$gutter-md) {
   @if map-has-key($breakpoints, md) {
     @include col($columns, $col-gutter, md, $max-cols-md);
   }
 }
 
-@mixin col-lg($columns:$cols-lg, $col-gutter:$gutter) {
+@mixin col-lg($columns:$cols-lg, $col-gutter:$gutter-lg) {
   @if map-has-key($breakpoints, lg) {
     @include col($columns, $col-gutter, lg, $max-cols-lg);
   }
 }
 
-@mixin col-xl($columns:$cols-xl, $col-gutter:$gutter) {
+@mixin col-xl($columns:$cols-xl, $col-gutter:$gutter-xl) {
   @if map-has-key($breakpoints, xl) {
     @include col($columns, $col-gutter, xl, $max-cols-xl);
   }

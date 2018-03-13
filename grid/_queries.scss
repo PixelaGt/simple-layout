@@ -1,5 +1,6 @@
 @import '../settings';
 
+// Crea un media query y aplica el estilo deseado
 @mixin breakpoint($screen-size) {
   $breakpoint-val: map-get($breakpoints, $screen-size);
 
