@@ -1,18 +1,6 @@
 @import '../settings';
 
-nav {
-  margin-left: $global-margin;
-  margin-right: $global-margin;
-
-  a {
-    display: inline-block;
-    padding: $global-padding;
-    margin-left: $nav-link-margin;
-    margin-right: $nav-link-margin;
-  }
-}
-
-.nav {
+%nav {
   padding: 0;
   list-style: none;
   margin-left: $global-margin;
